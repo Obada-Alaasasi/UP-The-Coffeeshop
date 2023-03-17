@@ -87,10 +87,8 @@ class Reservation(models.Model):
     
 
 class Customer(models.Model):
-    name = models.CharField(max_length = 25, blank = False)
-    phone = models.IntegerField(blank = False, null = False)
     account = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete = models.CASCADE)
-    date_enrolled = models.DateField(default = timezone.now)
+    phone = models.IntegerField(blank = False, null = False)
     points = models.IntegerField(default = 0, editable = False)
     profits = models.IntegerField(default = 0, editable = False)
 
