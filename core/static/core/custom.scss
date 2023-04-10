@@ -1,0 +1,110 @@
+
+//change default variables
+
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+$font-family-base: "Rowdies";
+
+//import 
+@import "bootstrap-5.3/scss/bootstrap";
+
+
+//normal css
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.banner{
+    margin: 20px;
+}
+  
+#banner_text_1 {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #Fadc95;
+    border-radius: 0px 0px 10px 10px;
+    padding: 20px;
+}
+#banner_img_1{
+    border-radius: 10px 10px 0px 0px;
+}
+#banner_text_2{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fcb4c0;
+    border-radius: 0px 0px 10px 10px;
+    padding: 20px;
+}
+#banner_img_2{
+    border-radius: 10px 10px 0px 0px;
+}
+#banner_text_3 {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7AA85B;
+    border-radius: 0px 0px 10px 10px;
+    padding: 20px;
+}
+#banner_img_3{
+    border-radius: 10px 10px 0px 0px;
+}
+#IMG3{
+    display: flex; 
+    background-color: #7AA85B; 
+    justify-content: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+/* responsive text and round corners for banners*/
+@include media-breakpoint-up(md){
+    #banner_text_1 {
+        border-radius: 0px 10px 10px 0px; 
+        padding: 25px;
+    }
+    #banner_img_1{
+        border-radius: 10px 0px 0px 10px;
+    }
+    #banner_text_2{
+        border-radius: 10px 0px 0px 10px;
+        padding: 25px;
+    }
+    #banner_img_2{
+        border-radius: 0px 10px 10px 0px;
+    }
+    #banner_text_3 {
+        border-radius: 0px 10px 10px 0px;
+        padding: 25px; 
+    }
+    #banner_img_3{
+        border-radius: 10px 0px 0px 10px;
+    }
+    #IMG3{
+        border-radius: 10px 0px 0px 10px;
+    }
+    span{
+        font-size:1.1em;
+    }
+}
+@include media-breakpoint-up(lg){
+    span{
+        font-size:1.1em;
+    }
+}
+
+@include media-breakpoint-up(xl){
+    span{
+        font-size:1.4em;
+    }
+}
+
+
+
+  
+  
+
+
+
+
