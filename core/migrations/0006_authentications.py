@@ -8,40 +8,40 @@ def assign_customer_perms(apps, schema_editor):
     Group = apps.get_model('auth', 'Group')
 
     # create Permission
-    perms = Permission.objects
     customer_perms = [
-        perms.get(codename='add_order'),
-        perms.get(codename='view_order'),
-        perms.get(codename='change_order'),
-        perms.get(codename='delete_order'),
-
-        perms.get(codename='add_orderitem'),
-        perms.get(codename='view_orderitem'),
-        perms.get(codename='change_orderitem'),
-        perms.get(codename='delete_orderitem'),
-
-        perms.get(codename='add_reservation'),
-        perms.get(codename='view_reservation'),
-        perms.get(codename='change_reservation'),
-        perms.get(codename='delete_reservation'),
-    
-        perms.get(codename='view_item'),
-        perms.get(codename='view_payment'),
-        perms.get(codename='add_payment')
+        #Order model permission codenames
+        'add_order',
+        'view_order',
+        'change_order',
+        'delete_order',
+        #OrderItem model permission codenames
+        'add_orderitem',
+        'view_orderitem',
+        'change_orderitem',
+        'delete_orderitem',
+        #Reservation model permission codenames
+        'add_reservation',
+        'view_reservation',
+        'change_reservation',
+        'delete_reservation',
+        #Item and Payment model permission codenames
+        'view_item',
+        'view_payment',
+        'add_payment'
     ]
 
     # create Group and assign perms
     admin = Group.objects.create(name = 'admin')
     admin.save()
     customer = Group.objects.create(name = 'customer')
-    customer.permissions.set(customer_perms)
+    customer.permissions.set([perm for perm in Permission.objects.all() if perm.codename in customer_perms])
     customer.save()
 
 
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('core', '0005_ChangeCustomer'),
+        ('core', '0005_ChangeCustomer',)
     ]
 
     operations = [
