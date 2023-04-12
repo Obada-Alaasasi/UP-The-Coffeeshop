@@ -46,7 +46,7 @@
             <label for="password">Password:</label><br>
             <input type="password" id="password" name="pswd">
         </div>
-        {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+        {% if error %}<p><strong>{{ error }}</strong></p>{% endif %}
         <br>
         <a href="{% url 'core:login' %}">Already a customer?</a><br><br>
         <input type="submit">

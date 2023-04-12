@@ -1,0 +1,5 @@
+MissingUnamePswd = "Please Provide both username and password"
+IncorrectUnamePswd = "Sorry, incorrect username or password"
+MissingCredentials = "Please provide all credentials"
+PswdLength = "Password must be at least 8 characters"
+PswdRule = "Password must contain at least: 1 uppercase, 1 lowercase, and 1 number"

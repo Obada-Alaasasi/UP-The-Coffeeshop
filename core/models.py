@@ -93,4 +93,4 @@ class Customer(models.Model):
     profits = models.IntegerField(default = 0, editable = False)
 
     def __str__(self):
-        return self.name
+        return str(self.account)
