@@ -4270,7 +4270,7 @@ textarea.form-control-lg {
 
 .navbar-dark {
   --bs-navbar-color: rgba(255, 255, 255, 0.55);
-  --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
+  --bs-navbar-hover-color: burlywood;
   --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
   --bs-navbar-active-color: #fff;
   --bs-navbar-brand-color: #fff;
@@ -11910,8 +11910,19 @@ html, body {
   margin: 20px;
 }
 
+button {
+  margin-top: 20px;
+  border: rgb(255, 174, 0) 2px solid;
+  border-radius: 10px;
+}
+
+button:hover {
+  color: burlywood;
+}
+
 #banner_text_1 {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #Fadc95;
@@ -11925,6 +11936,7 @@ html, body {
 
 #banner_text_2 {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #fcb4c0;
@@ -11938,6 +11950,7 @@ html, body {
 
 #banner_text_3 {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #7AA85B;

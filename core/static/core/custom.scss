@@ -3,6 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
 $font-family-base: "Rowdies";
+$navbar-dark-hover-color: burlywood;
 
 //import 
 @import "../Bootstrap-5.3_src/scss/bootstrap";
@@ -17,9 +18,18 @@ html, body {
 .banner{
     margin: 20px;
 }
+button{
+    margin-top: 20px;
+    border: rgb(255, 174, 0) 2px solid;
+    border-radius: 10px;
+}
+button:hover{
+    color:burlywood;
+}
   
 #banner_text_1 {
     display:flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #Fadc95;
@@ -31,6 +41,7 @@ html, body {
 }
 #banner_text_2{
     display:flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #fcb4c0;
@@ -42,6 +53,7 @@ html, body {
 }
 #banner_text_3 {
     display:flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #7AA85B;
