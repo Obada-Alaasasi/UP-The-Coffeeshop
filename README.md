@@ -12,7 +12,7 @@ This is a demo website for a virtual local coffeeshop. This is the first project
 
 
 ## General Information
-the goal would be to create a fully-functioning website for a local coffeeshop. the website offers a user authentication system with two privilege groups with assingned permissions: Admin and Customer. Only Admin-group users have the access to the admin panel for full database access. the webiste also has a clear structure for the backend with orders, payments, customers and others related through foreign keys with constraint keys for ON_DELETE cases. the project uses function-based views and the URL routing is done with application-specific namespaces to prevent URL hardcoding. More details are to be given once the project is finished.
+the goal would be to create a fully-functioning website for a local coffeeshop. the backend is created with Django and the frontend currently uses Bootstrap with plans to build a proper API and use React.JS in the near future. the website offers a user authentication system with two privilege groups with assingned permissions: Admin and Customer. Only Admin-group users have the access to the admin panel for full database access. the webiste also has a clear structure for the backend with orders, payments, customers and others related through foreign keys with constraint keys for ON_DELETE cases. the project uses function-based views and the URL routing is done with application-specific namespaces to prevent URL hardcoding. More details are to be given once the project is finished.
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 
