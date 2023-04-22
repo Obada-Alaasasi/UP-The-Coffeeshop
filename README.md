@@ -1,4 +1,4 @@
-# UP The Coffeeshop (in-progress)
+# UProastery (in-progress)
 This is a demo website for a virtual local coffeeshop. This is the first project in my portfolio, and should make a good start in getting comfortable with CRUD operations involving relationships between different models in addition to simple frontend design.
 
 
