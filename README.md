@@ -1,4 +1,4 @@
-# UP The Coffeeshop (in-progress)
+# UProastery (in-progress)
 This is a demo website for a virtual local coffeeshop. This is the first project in my portfolio, and should make a good start in getting comfortable with CRUD operations involving relationships between different models in addition to simple frontend design.
 
 
@@ -25,7 +25,6 @@ the goal would be to create a fully-functioning website for a local coffeeshop. 
 
 
 ## Features
-List the ready features here:
 - User authenication system.
 - Make Orders and Receive email notifcations.
 - Make reservations and receive QR codes.
