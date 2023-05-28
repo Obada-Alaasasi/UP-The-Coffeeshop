@@ -1,1 +1,5 @@
 *.pyc
+*.scss
+*.css
+*.scss.map
+*.css.map
