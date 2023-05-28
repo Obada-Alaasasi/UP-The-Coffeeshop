@@ -25,7 +25,6 @@ the goal would be to create a fully-functioning website for a local coffeeshop. 
 
 
 ## Features
-List the ready features here:
 - User authenication system.
 - Make Orders and Receive email notifcations.
 - Make reservations and receive QR codes.
